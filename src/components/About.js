@@ -1,6 +1,7 @@
 import React from 'react';
 
 function About() {
+  document.title = 'MyNotebook | About';
   return (
     <div className="container my-4">
       <div className="row">
@@ -16,99 +17,34 @@ function About() {
           reminders.
         </div>
       </div>
-      <div className="row mt-4 ">
-        <div className="col-12 aboutTextContent ">
-          <h4 className="col-12 display-4">What We Offer:</h4>
-          <div
-            className="accordion mx-auto"
-            id="accordionExample"
-            style={{ maxWidth: '1100px' }}
-          >
-            <div className="accordion-item mt-4">
-              <h2 className="accordion-header">
-                <button
-                  className="accordion-button aboutTextContent2"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Notes:
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                className="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body aboutTextContent2">
-                  Easily jot down your
-                  <strong> ideas, thoughts, and important information </strong>
-                  with our intuitive <code>note-taking</code> feature. Whether
-                  you're brainstorming for a project or simply want to capture a
-                  moment of inspiration, our platform ensures that your notes
-                  are organized and accessible whenever you need them.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  className="accordion-button collapsed aboutTextContent2"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Todos:
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body aboutTextContent2">
-                  Stay on top of your <strong> tasks and to-dos </strong> with
-                  our powerful <code> task management system </code>. Create,
-                  edit, and mark tasks as completed, helping you prioritize and
-                  manage your workload effectively. Our user-friendly interface
-                  ensures a hassle-free experience, allowing you to focus on
-                  what matters most.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  className="accordion-button collapsed aboutTextContent2"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Reminders:
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                className="accordion-collapse collapse aboutTextContent2"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  Never miss a <strong> deadline </strong> or forget an{' '}
-                  <strong> important event </strong> again. With our{' '}
-                  <code> email reminder </code> feature, you can set future
-                  reminders for yourself. Receive timely notifications directly
-                  to your inbox, keeping you informed and on track with your
-                  commitments.
-                </div>
-              </div>
-            </div>
-          </div>
+
+      <div className="row mt-4 aboutTextContent">
+        <h4 className="col-12 display-4">What We Offer:</h4>
+        <hr />
+        <h5 className="col-12 display-5">Notes:</h5>
+        <div className="col-12">
+          Easily jot down your
+          <strong> ideas, thoughts, and important information </strong>
+          with our intuitive <storng>note-taking</storng> feature. Whether
+          you're brainstorming for a project or simply want to capture a moment
+          of inspiration, our platform ensures that your notes are organized and
+          accessible whenever you need them.
+        </div>
+        <h5 className="col-12 display-5">Todos:</h5>
+        <div className="col-12">
+          Stay on top of your <strong> tasks and to-dos </strong> with our
+          powerful <strong> task management system </strong>. Create, edit, and
+          mark tasks as completed, helping you prioritize and manage your
+          workload effectively. Our user-friendly interface ensures a
+          hassle-free experience, allowing you to focus on what matters most.{' '}
+        </div>
+        <h5 className="col-12 display-5">Reminders:</h5>
+        <div className="col-12">
+          Never miss a <strong> deadline </strong> or forget an{' '}
+          <strong> important event </strong> again. With our{' '}
+          <strong> email reminder </strong> feature, you can set future
+          reminders for yourself. Receive timely notifications directly to your
+          inbox, keeping you informed and on track with your commitments.
         </div>
       </div>
       <div className="row mt-4">

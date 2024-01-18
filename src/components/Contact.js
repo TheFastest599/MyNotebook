@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import globalContext from '../context/global/globalContext';
 
 const Contact = () => {
+  document.title = 'My Notebook | Contact Us';
   const gcontext = useContext(globalContext);
   const { showAlert, setSpinner } = gcontext;
   const [formData, setFormData] = useState({

@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import globalContext from '../context/global/globalContext';
 
 function ResetPassword() {
+  document.title = 'My Notebook | Reset Password';
   const { resetToken } = useParams();
   // console.log(resetToken);
 
@@ -122,7 +123,7 @@ function ResetPassword() {
                 style={
                   check.password
                     ? { display: 'none' }
-                    : { display: 'block', color: 'red' }
+                    : { display: 'block', color: 'white' }
                 }
               >
                 <ul>

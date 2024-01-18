@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import globalContext from '../context/global/globalContext';
 
 function ForgotPassword() {
+  document.title = 'My Notebook | Forgot Password';
   const [credentials, setCredentials] = useState({
     email: '',
   });

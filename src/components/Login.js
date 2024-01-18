@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { passwordEyes } from './PasswordEyes';
 
 function Login() {
+  document.title = 'My Notebook | Login';
   const gcontext = useContext(globalContext);
   const { showAlert, setSpinner } = gcontext;
   const [credentials, setCredentials] = useState({ email: '', password: '' });
@@ -47,8 +48,6 @@ function Login() {
   useEffect(() => {
     passwordEyes('password', 'passwordEye');
   }, []);
-
-  document.title = 'MyNotebook - Login';
 
   return (
     <div className="row d-flex justify-content-center mt-5">

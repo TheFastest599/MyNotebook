@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { passwordEyes } from './PasswordEyes';
 
 function Signup() {
+  document.title = 'My Notebook | Sign Up';
   const gcontext = useContext(globalContext);
   const { showAlert, setSpinner } = gcontext;
 
@@ -74,8 +75,6 @@ function Signup() {
     passwordEyes('password', 'passwordEye');
     passwordEyes('cpassword', 'cpasswordEye');
   }, []);
-
-  document.title = 'MyNotebook - SignUp';
 
   // console.log(check);
 

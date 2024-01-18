@@ -33,5 +33,5 @@ worker.on('message', message => {
 worker.postMessage('Main is on!');
 
 app.listen(port, () => {
-  console.log(`iNotebook Apps listening at http://localhost:${port}`);
+  console.log(`MyNotebook Apps listening at http://localhost:${port}`);
 });

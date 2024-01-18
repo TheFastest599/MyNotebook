@@ -25,6 +25,7 @@ const GlobalState = props => {
     )}: ${text}`;
     notification.show();
   };
+
   // ---------------------------------
   // Spinner---------------------------
   const [spinner, setSpinner] = useState(false);

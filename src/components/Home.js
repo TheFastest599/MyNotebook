@@ -8,6 +8,7 @@ import Todos from './Todos';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  document.title = 'My Notebook | Home';
   let navigate = useNavigate();
   useEffect(() => {
     if (localStorage.getItem('token')) {
@@ -28,6 +29,9 @@ function Home() {
             data-bs-target="#notes-tab-pane"
             type="button"
             role="tab"
+            onClick={() => {
+              document.title = 'My Notebook | Notes';
+            }}
             aria-controls="home-tab-pane"
             aria-selected="true"
           >
@@ -42,6 +46,9 @@ function Home() {
             data-bs-target="#todos-tab-pane"
             type="button"
             role="tab"
+            onClick={() => {
+              document.title = 'My Notebook | Todos';
+            }}
             aria-controls="profile-tab-pane"
             aria-selected="false"
           >
@@ -56,6 +63,9 @@ function Home() {
             data-bs-target="#reminder-tab-pane"
             type="button"
             role="tab"
+            onClick={() => {
+              document.title = 'My Notebook | Reminders';
+            }}
             aria-controls="contact-tab-pane"
             aria-selected="false"
           >
@@ -63,7 +73,11 @@ function Home() {
           </button>
         </li>
       </ul>
-      <div className="tab-content" id="myTabContent">
+      <div
+        className="tab-content "
+        id="myTabContent"
+        style={{ marginBottom: '100px' }}
+      >
         <div
           className="tab-pane fade show active"
           id="notes-tab-pane"

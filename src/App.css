@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.myNotebook {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
 #notification {
   background-color: inherit;
 }
 
 #addstuffbutton {
   position: fixed;
+  background-color: rgba(0, 195, 255, 0.5);
   bottom: 10%;
   right: 10%;
   z-index: 2;
@@ -19,7 +30,7 @@
 .todoitem {
   background-color: #fff;
   border-radius: 20px;
-  padding: 15px 10px 15px 10px;
+  padding: 15px 15px 15px 1px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   align-items: center;
@@ -55,7 +66,7 @@
 }
 
 .userButton {
-  min-width: 15vw;
+  min-width: 150px;
   border-width: 0px;
 }
 
@@ -66,10 +77,10 @@
 
 @keyframes anim-Login {
   0% {
-    width: 15vw;
+    width: 150px;
   }
   100% {
-    width: 25vw;
+    width: 200px;
   }
 }
 
@@ -88,6 +99,7 @@ body {
   -o-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
 }
+
 @media (max-width: 768px) {
   body {
     min-height: 120vh;

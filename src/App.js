@@ -17,7 +17,9 @@ function App() {
     <>
       <Spinner></Spinner>
       <Router>
-        <Navbar></Navbar>
+        <div style={{ height: '8vh' }}>
+          <Navbar></Navbar>
+        </div>
         <Alert></Alert>
         <div className="container">
           <Routes>

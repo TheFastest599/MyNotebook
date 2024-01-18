@@ -1,15 +1,42 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useScroll } from '../hooks/useScroll';
 
 function Navbar() {
   let location = useLocation();
   let navigate = useNavigate();
 
+  const { scrollDirection } = useScroll();
+  const styles = {
+    active: {
+      visibility: 'visible',
+      transition: 'all 0.3s',
+    },
+    hidden: {
+      visibility: 'hidden',
+      transition: 'all 0.3s',
+      transform: 'translateY(-100%)',
+    },
+  };
+
+  const navStatus = () => {
+    if (scrollDirection === 'down') {
+      return styles.active;
+    } else if (scrollDirection === undefined) {
+      return styles.active;
+    } else {
+      return styles.hidden;
+    }
+  };
+
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark  ">
+      <nav
+        className="navbar navbar-expand-lg navbar-dark  fixed-top"
+        style={navStatus()}
+      >
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand myNotebook" to="/">
             MyNotebook
           </Link>
           <button
