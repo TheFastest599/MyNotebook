@@ -1,4 +1,4 @@
-# MyNotebook - Your notes,title and Reminders secured in the cloud.
+# MyNotebook - Your Notes,Todos and Reminders secured in the cloud.
 
 Welcome to MyNotebook, the ultimate productivity app designed to streamline your daily tasks and help you stay organized. With a user-friendly interface and powerful features, MyNotebook is your go-to companion for managing notes, todos, and email reminders efficiently.
 
