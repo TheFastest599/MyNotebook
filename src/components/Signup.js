@@ -102,7 +102,7 @@ function Signup() {
                   }
                   onChange={e => {
                     onChange(e);
-                    if (e.target.value.length > 3) {
+                    if (e.target.value.length >= 3) {
                       setCheck({ ...check, name: true });
                     } else {
                       setCheck({ ...check, name: false });

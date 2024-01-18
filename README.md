@@ -34,6 +34,10 @@ Never miss an important deadline or meeting with the Email Reminders feature. My
 - Set Reminders upto 700 characters.
 - Receive timely reminders directly in your email inbox.
 
+## Technologies used
+
+MERN Stack,Bootstrap and Material UI.
+
 ## Getting Started
 
 ### How to run-
