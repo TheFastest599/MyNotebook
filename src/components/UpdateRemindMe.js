@@ -223,8 +223,8 @@ function UpdateRemindMe() {
                 type="button"
                 className="btn btn-primary"
                 disabled={
-                  reminder.title.length < 3 ||
-                  reminder.reminder.length < 3 ||
+                  reminder.title.length < 1 ||
+                  reminder.reminder.length < 1 ||
                   !timeChanged
                 }
                 onClick={() => {

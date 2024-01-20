@@ -91,7 +91,7 @@ function AddTodo() {
               <button
                 type="button"
                 onClick={handleclick}
-                disabled={todo.todo.length < 3}
+                disabled={todo.todo.length < 1}
                 className="btn btn-primary"
               >
                 Add Todo

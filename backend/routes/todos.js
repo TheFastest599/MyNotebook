@@ -20,7 +20,7 @@ router.get('/fetchalltodos', fetchuser, async (req, res) => {
 router.post(
   '/addtodo',
   fetchuser,
-  [body('todo', 'Enter a valid todo').isLength({ min: 3 })],
+  [body('todo', 'Enter a valid todo').isLength({ min: 1 })],
   async (req, res) => {
     try {
       // If there are errors, return bad request and the errors

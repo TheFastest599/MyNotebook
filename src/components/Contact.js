@@ -90,7 +90,7 @@ const Contact = () => {
         </div>
         <button
           type="submit"
-          disabled={formData.name.length < 3 || formData.message.length < 3}
+          disabled={formData.name.length < 1 || formData.message.length < 1}
           className="btn btn-primary"
         >
           Submit

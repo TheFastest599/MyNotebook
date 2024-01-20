@@ -124,9 +124,9 @@ function AddNote() {
                 type="button"
                 onClick={handleclick}
                 disabled={
-                  note.title.length < 3 ||
-                  note.description.length < 5 ||
-                  note.tag.length < 3
+                  note.title.length < 1 ||
+                  note.description.length < 1 ||
+                  note.tag.length < 1
                 }
                 className="btn btn-primary"
               >

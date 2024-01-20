@@ -101,7 +101,7 @@ function UpdateTodo() {
               <button
                 type="button"
                 onClick={handleclick}
-                disabled={todo.length < 3}
+                disabled={todo.todo.length < 1}
                 className="btn btn-primary"
               >
                 Update Todo

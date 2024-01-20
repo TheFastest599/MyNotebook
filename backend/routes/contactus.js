@@ -20,9 +20,9 @@ const { body, validationResult } = require('express-validator');
 router.post(
   '/',
   [
-    body('name', 'Enter a name').isLength({ min: 3 }),
+    body('name', 'Enter a name').isLength({ min: 1 }),
     body('message', 'Message must be atleast 3 characters').isLength({
-      min: 3,
+      min: 1,
     }),
   ],
   async (req, res) => {

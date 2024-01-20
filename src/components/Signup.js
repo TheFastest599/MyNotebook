@@ -24,6 +24,13 @@ function Signup() {
     cpassword: false,
   });
 
+  useEffect(() => {
+    if (credentials.password !== credentials.cpassword) {
+      setCheck(prevCheck => ({ ...prevCheck, cpassword: false }));
+    }
+  }, [credentials.password, credentials.cpassword]);
+  // For password and check password
+
   const [passInfo, setPassInfo] = useState(false);
 
   const passRegex =
@@ -202,6 +209,7 @@ function Signup() {
                     className="form-control "
                     name="cpassword"
                     id="cpassword"
+                    readOnly={check.password ? false : true}
                     style={
                       check.cpassword
                         ? { border: '2px solid rgb(0, 211, 0)' }

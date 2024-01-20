@@ -143,9 +143,9 @@ function UpdateNote() {
                 className="btn btn-primary"
                 onClick={handleclick}
                 disabled={
-                  note.etitle.length < 3 ||
-                  note.edescription.length < 5 ||
-                  note.etag.length < 3
+                  note.etitle.length < 1 ||
+                  note.edescription.length < 1 ||
+                  note.etag.length < 1
                 }
               >
                 Update Note

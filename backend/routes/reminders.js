@@ -21,8 +21,8 @@ router.post(
   '/addreminder',
   fetchuser,
   [
-    body('reminder', 'Enter a valid reminder').isLength({ min: 3 }),
-    body('title', 'Enter a valid title').isLength({ min: 3 }),
+    body('reminder', 'Enter a valid reminder').isLength({ min: 1 }),
+    body('title', 'Enter a valid title').isLength({ min: 1 }),
   ],
   async (req, res) => {
     try {
