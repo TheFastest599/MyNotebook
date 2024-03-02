@@ -54,7 +54,7 @@ MERN Stack,Bootstrap and Material UI.
 2. Create notes, todos, and set up email reminders to enhance your productivity.
 3. Customize settings to tailor MyNotebook to your preferences.
 
-### Live at - http://82.153.70.212:6350
+### Live at - http://45.90.13.218:6222
 
 ## Feedback and Support
 
